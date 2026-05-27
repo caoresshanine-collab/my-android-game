@@ -22,8 +22,9 @@ jobs:
       - name: Build APK with Buildozer
         run: |
           export PATH=$PATH:~/.local/bin
-          buildozer android debug
-
+          # This command automatically accepts all Android SDK licenses
+          yes | buildozer android debug
+          
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
