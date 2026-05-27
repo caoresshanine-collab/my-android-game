@@ -11,6 +11,12 @@ fullscreen = 1
 android.permissions = INTERNET
 android.api = 33
 android.minapi = 21
+android.api = 33
+android.minapi = 21
+
+# Add this line right below android.minapi to lock the build tools:
+android.build_tools_version = 33.0.0
+
 android.ndk = 25b
 android.archs = arm64-v8a, armeabi-v7a
 
